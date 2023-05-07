@@ -3,17 +3,18 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const fs = require('fs')
 
-const NewsDetails = require("./model/headline.model.js")
+const NewsDetails = require("./model/info.model.js")
+const router = require('./routes/info.js')
 
 
 const app = express()
 app.use(express.json())
-app.use(cors)
+app.use(cors())
 
 app.get("/",(req,res) => {
     res.send("server running")
 })
-
+app.use('/news',router)
 
 const data = JSON.parse(fs.readFileSync("./jsondata.json","utf-8"))
 // console.log(data);
