@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useState}from 'react';
+
+import BarChart from './BarChart';
+import {userData} from "../Data.js"
 
 const Chart = () => {
+
+  const [Data,setData] = useState({
+    labels: userData.map((data):any => data.start_year),
+    datasets: [{
+      label: 'Intensity Gained',
+      data: userData.map((data):any => data.intensity)
+    }]
+  })
+
   return (
     <div>
-      <h1>Charts works</h1>
+      <BarChart chartData={Data}/>
     </div>
   )
 }

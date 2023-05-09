@@ -20,8 +20,8 @@ const getInfo = async(req,res) => {
             city: info.city
             })
         })
-
-        res.status(200).json(allInfoInDetail)
+        
+        return res.status(200).json({message:'Ok', data: allInfoInDetail})
     } catch (error) {
         res.status(404).json({message:error.message})
     }    
