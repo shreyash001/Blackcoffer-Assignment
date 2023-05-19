@@ -1,2 +1,5 @@
-const BASE_URL = "http://localhost:5000"
+import axios from "axios"
 
+const API = axios.create({baseURL:"http://localhost:5000"})
+
+export const getInfo = () => API.get("/getInfo");

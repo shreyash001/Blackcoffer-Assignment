@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -17,35 +17,23 @@ const Sidebar = () => {
       <div className="sidebar-menu">
         <ul>
           <li>
-            <Link className="active">
-                <span className="icon">
-                <i className="fas fa-home"></i>
-              </span>
+            <Link className="active" to="/">
               <span className="item">Home</span>
             </Link>
           </li>
           <li>
-            <Link>
-              <span className="icon">
-                <i className="fas fa-desktop"></i>
-              </span>
+            <Link to="/dashboard">
               <span className="item">My Dashboard</span>
             </Link>
           </li>
           <li>
-            <Link>
-              <span className="icon">
-                <i className="fas fa-chart-line"></i>
-              </span>
+            <Link to="/reports">
               <span className="item">Reports</span>
             </Link>
           </li>
           
           <li>
-            <Link>
-              <span className="icon">
-                <i className="fas fa-cog"></i>
-              </span>
+            <Link to="/setting">
               <span className="item">Settings</span>
             </Link>
           </li>

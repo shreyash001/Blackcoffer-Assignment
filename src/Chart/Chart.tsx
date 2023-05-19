@@ -3,7 +3,7 @@ import React, { useState}from 'react';
 import BarChart from './BarChart';
 import {userData} from "../Data.js"
 
-const Chart = () => {
+const Chart = ({data}:any) => {
 
   const [Data,setData] = useState({
     labels: userData.map((data):any => data.start_year),
@@ -12,10 +12,11 @@ const Chart = () => {
       data: userData.map((data):any => data.intensity)
     }]
   })
-
+  // console.log(data)
   return (
     <div>
-      <BarChart chartData={Data}/>
+      {/* <BarChart chartData={Data}/> */}
+      chart works
     </div>
   )
 }

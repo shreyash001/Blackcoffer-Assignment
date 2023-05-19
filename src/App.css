@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    overflow-y: auto;
 }
 
 body{
@@ -24,4 +25,12 @@ body{
     height: 100%;
     padding: 20px 0;
     transition: all 0.5s ease;
+}
+
+.App .main-page{
+  width: calc(100% - 225px);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
 }

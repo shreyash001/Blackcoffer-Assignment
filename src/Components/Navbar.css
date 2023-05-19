@@ -1,0 +1,28 @@
+.navbar{
+    /* border: 1px solid black;
+    border-radius: 5px; */
+    -webkit-box-shadow: 10px 3px 47px 0px rgba(186,186,186,0.85);
+    -moz-box-shadow: 10px 3px 47px 0px rgba(186,186,186,0.85);
+    box-shadow: 10px 3px 47px 0px rgba(186,186,186,0.85);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar input{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid lightblue;
+    min-width: 250px;
+}
+.navbar h3{
+    margin: 10px;
+    font-size: 20px;
+}
+.navbar button{
+    width: 50px;
+    height: 45px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
